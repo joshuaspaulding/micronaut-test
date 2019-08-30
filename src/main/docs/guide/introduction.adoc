@@ -10,7 +10,7 @@ With that in mind it is generally pretty easy to start Micronaut in a unit test 
 EmbeddedServer embeddedServer = ApplicationContext.run(EmbeddedServer)
 ----
 
-<1> The field is declared as shared so to server is started only once for all methods in the class
+<1> The field is declared as shared, so the server is started only once for all methods in the class
 <2> The `@AutoCleanup` annotation ensures the server is shutdown after the test suite completes.
 
 However, there are cases where having some additional features to test Micronaut come in handy, such as mocking bean definitions and so on.
